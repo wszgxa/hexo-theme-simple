@@ -1,0 +1,19 @@
+# 
+menu:
+  home: /
+  categories: /categories
+  tags: /tags
+  about: /about
+
+favicon: /favicon.ico
+
+# Place your favicon.ico to /source directory.
+favicon: /favicon.ico
+
+avatar: http://7fvhwe.com1.z0.glb.clouddn.com/6060475.jpg
+author: hiluluke
+
+# Set default keywords (Use a comma to separate)
+keywords: "hiluluke note 笔记 前端 技术 希鲁鲁克 javascript "
+
+description: "且歌且行"
