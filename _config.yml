@@ -1,11 +1,10 @@
-# 
+# Header
 menu:
   home: /
   categories: /categories
   tags: /tags
   about: /about
-
-favicon: /favicon.ico
+rss: /atom.xml
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
