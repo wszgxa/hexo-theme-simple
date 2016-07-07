@@ -1,0 +1,67 @@
+@import '_reset'
+@import '_variables'
+@import '_util/mixin'
+html
+  overflow-y scroll
+  -webkit-overflow-scrolling touch
+  -webkit-text-size-adjust 100%
+  -webkit-user-select none
+body
+  margin 0
+  word-break break-all
+  word-wrap break-word
+  -webkit-user-select none
+  font size-font Helvetica, Arial, sans-serif
+  background color-background
+  color color-font
+  
+@font-face
+  font-family: 'iconfont'
+  src url('//at.alicdn.com/t/font_1467863606_24519.eot')
+  src url('//at.alicdn.com/t/font_1467863606_24519.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1467863606_24519.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1467863606_24519.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1467863606_24519.svg#iconfont') format('svg')
+
+// header
+header
+  padding-left 10px
+  margin-top 10px;
+  nav
+    width 40px
+    height 40px
+    border-radius 50%
+    border 1px solid color-none
+    line-height 40px
+    text-align center
+    cursor pointer
+    transition side-time all
+  nav:hover
+    border 1px solid color-border
+  nav:after
+    content '\e603'
+    font-family iconfont
+    font-size 32px 
+    
+// sidebar show style
+.sideShow 
+  nav
+    transform rotate3d(0, 1, 0, 180deg)
+  .wrap
+    padding-left side-width  
+  .sidebar
+    transform none
+    box-shadow 1px 0 5px #F1F1F1
+.sidebar
+  position: fixed
+  left 0
+  top 0
+  bottom 0
+  width side-width
+  // use transform to hide sidebar
+  transform translate3d(-(side-width), 0, 0)
+  transition transform side-time
+  background-color #F1F1F1
+
+.wrap
+  transition side-time all

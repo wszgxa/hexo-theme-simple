@@ -1,8 +1,12 @@
 <%- partial('_partial/head') %>
-
 <body>
   <div id="container">
-    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-    
+    <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    <div class="wrap"> 
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    </div>
   </div>
+  <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+  <%- js('js/script') %>
 </body>
+</html>
