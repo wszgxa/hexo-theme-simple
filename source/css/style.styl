@@ -36,12 +36,13 @@ header
     text-align center
     cursor pointer
     transition side-time all
-  nav:hover
-    border 1px solid color-border
   nav:after
     content '\e603'
     font-family iconfont
-    font-size 32px 
+    font-size 24px
+    color #7F7F7F
+  nav:hover:after
+    color color-danger
     
 // sidebar show style
 .sideShow 
@@ -51,7 +52,7 @@ header
     padding-left side-width  
   .sidebar
     transform none
-    box-shadow 1px 0 5px #F1F1F1
+    box-shadow 1px 0 5px color-side
 .sidebar
   position: fixed
   left 0
@@ -61,7 +62,26 @@ header
   // use transform to hide sidebar
   transform translate3d(-(side-width), 0, 0)
   transition transform side-time
-  background-color #F1F1F1
-
+  background-color color-side
+  .head-icon
+    margin 30px auto 10px
+    width 72px
+    height 72px
+    img 
+      width 60px
+      height 60px
+      border 6px solid rgba(255, 255, 255, .85) 
+      border-radius 50%
+  .desc
+    margin 0 auto
+    text-align center
+    color #3D3D3D
+    font-size 15px
+    max-width 180px
+  .name 
+    text-align center
+    color color-dark
+    padding 0 0 10px
+    font-size 15px
 .wrap
   transition side-time all

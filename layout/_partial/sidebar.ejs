@@ -1,1 +1,15 @@
-<aside class="sidebar"></aside>
+<aside class="sidebar">
+  <div class="head-icon">
+  <% if (theme.menu.about) {%>
+    <a href="<%= theme.menu.about %>">
+      <img src="<%= theme.avatar %>">
+    </a>
+  <% } else{ %>
+    <img src="<%= theme.avatar %>">
+  <% } %>
+  </div>
+  <div class="name"><%= theme.author %></div>
+  <div class="desc">
+    <h4><%= theme.description %></h4>  
+  </div>
+</aside>

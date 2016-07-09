@@ -9,7 +9,7 @@ rss: /atom.xml
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
 
-avatar: http://7fvhwe.com1.z0.glb.clouddn.com/6060475.jpg
+avatar: /avatar.jpg
 author: hiluluke
 
 # Set default keywords (Use a comma to separate)
