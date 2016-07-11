@@ -1,7 +1,8 @@
 ;(function (win, doc){
   var simple = {
     init: function () {
-      this.bind()
+      this.bind();
+      this.initSidebar();
     },
     bind: function () {
       var self = this;
@@ -11,14 +12,32 @@
     },
     // sidebar状态机
     sidebarState: (function () {
-      var state = false;
+      var state = false,
+          sideState = localStorage.getItem('sidebarState');
+      if (sideState != undefined) {
+        state = !(sideState == 'true')
+      }
       return function () {
         return state = !state;
       }
     })(),
-    toggleBodyClass: function () {
-      var b = $('body');
-      this.sidebarState() ? b.addClass('sideShow') : b.removeClass('sideShow');  
+    // sidebar 初始化
+    initSidebar: function() {
+      var sidebarState = localStorage.getItem('sidebarState');
+      if (sidebarState) {
+        this.toggleBodyClass(sidebarState)
+      }
+      return
+    },
+    toggleBodyClass: function (tag) {
+      var b = $('body'),
+          state = this.sidebarState();
+      if (tag != undefined) {
+        tag == 'true' ? b.addClass('sideShow') : b.removeClass('sideShow');
+        return;
+      }
+      state ? b.addClass('sideShow') : b.removeClass('sideShow');  
+      localStorage.setItem('sidebarState', state);
       return;
     }
   }

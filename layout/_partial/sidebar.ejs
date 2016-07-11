@@ -12,4 +12,36 @@
   <div class="desc">
     <h4><%= theme.description %></h4>  
   </div>
+  <nav class="side-nav">
+    <div class="nav-item">
+      <a href="<%= theme.menu.archives %>">
+        <span>
+          <%= site.posts.length %>
+        </span>
+        <span>
+          日志
+        </span>
+      </a>
+    </div>
+    <div class="nav-item">
+      <a href="theme.menu.categories">
+        <span>
+          <%= site.categories.length %>
+        </span>
+        <span>
+          分类
+        </span>
+      </a>
+    </div>
+    <div class="nav-item">
+      <a href="theme.menu.tags">
+        <span>
+          <%= site.tags.length %>
+        </span>
+        <span>
+          标签
+        </span>
+      </a>
+    </div>
+  </nav>
 </aside>

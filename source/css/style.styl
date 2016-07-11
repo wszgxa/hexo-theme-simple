@@ -27,7 +27,7 @@ body
 header
   padding-left 10px
   margin-top 10px;
-  nav
+  .arrows
     width 40px
     height 40px
     border-radius 50%
@@ -36,17 +36,17 @@ header
     text-align center
     cursor pointer
     transition side-time all
-  nav:after
+  .arrows:after
     content '\e603'
     font-family iconfont
     font-size 24px
     color #7F7F7F
-  nav:hover:after
+  .arrows:hover:after
     color color-danger
     
 // sidebar show style
 .sideShow 
-  nav
+  .arrows
     transform rotate3d(0, 1, 0, 180deg)
   .wrap
     padding-left side-width  
@@ -75,7 +75,7 @@ header
   .desc
     margin 0 auto
     text-align center
-    color #3D3D3D
+    color #707070
     font-size 15px
     max-width 180px
   .name 
@@ -83,5 +83,16 @@ header
     color color-dark
     padding 0 0 10px
     font-size 15px
+  .side-nav 
+    margin-top 35px
+    text-align center
+    font-size 16px
+    .nav-item
+      display inline-block
+      padding 0 4px
+    .nav-item: 
+      span
+        color color-light-font
+        display block
 .wrap
   transition side-time all
