@@ -1,13 +1,16 @@
 @import '_reset'
 @import '_variables'
 @import '_util/mixin'
+html, body
+  height 100%
 html
-  overflow-y scroll
   -webkit-overflow-scrolling touch
   -webkit-text-size-adjust 100%
   -webkit-user-select none
 body
   margin 0
+  padding 0
+  position relative
   word-break break-all
   word-wrap break-word
   -webkit-user-select none
@@ -43,7 +46,7 @@ body
 .i-codepen:before
   content '\e601'
 // header
-header
+.header
   padding-left 10px
   margin-top 10px;
   .arrows
@@ -131,3 +134,18 @@ header
           color color-dark
 .wrap
   transition side-time all ease-in-out
+  
+.content
+  max-width 768px
+  padding 20px
+  margin 20px auto 0
+.archives
+  margin-bottom 30px
+  .title-wrap
+    padding 20px 0
+    .post-title
+      font-size 26px
+      color color-header-font
+    time 
+      font-size 16px
+      color color-light-font

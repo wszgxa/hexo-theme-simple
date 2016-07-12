@@ -10,8 +10,11 @@
   </script>
   <div id="container">
     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-    <div class="wrap"> 
+    <div class="wrap">
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <section id="main" class="content">
+        <%- body %>
+      </section>
     </div>
   </div>
   <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
