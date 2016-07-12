@@ -9,7 +9,6 @@ rss: /atom.xml
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
-
 avatar: /avatar.jpg
 author: hiluluke
 
@@ -17,4 +16,13 @@ author: hiluluke
 keywords: "hiluluke note 笔记 前端 技术 希鲁鲁克 javascript "
 
 description: "我是一个粉刷匠"
+
+#  set social
+#  you can set github twitter weibo v2ex douban zhihu codepen facebook
+social:
+  github: https://github.com/wszgxa
+  v2ex: http://v2ex.com/member/hiluluke
+  zhihu: https://www.zhihu.com/people/zhao-guo-xu
+  twitter: https://twitter.com/Hiluluke
+  codepen: http://codepen.io/hiluluke
 

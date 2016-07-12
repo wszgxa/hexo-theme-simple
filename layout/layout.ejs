@@ -1,5 +1,13 @@
 <%- partial('_partial/head') %>
 <body>
+  <script type="text/javascript">
+    // fix sidebar flashing
+    (function(){
+      if (localStorage.getItem('sidebarState') == 'true') {
+        document.body.className="sideShow"
+      }
+    })()
+  </script>
   <div id="container">
     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
     <div class="wrap"> 

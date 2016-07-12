@@ -14,15 +14,34 @@ body
   font size-font Helvetica, Arial, sans-serif
   background color-background
   color color-font
-  
+                    
 @font-face
-  font-family: 'iconfont'
-  src url('//at.alicdn.com/t/font_1467863606_24519.eot')
-  src url('//at.alicdn.com/t/font_1467863606_24519.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1467863606_24519.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1467863606_24519.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1467863606_24519.svg#iconfont') format('svg')
+  font-family 'iconfont'
+  src url('//at.alicdn.com/t/font_1468297540_0711484.eot')
+  src url('//at.alicdn.com/t/font_1468297540_0711484.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1468297540_0711484.woff') format('woff'), 
+  url('//at.alicdn.com/t/font_1468297540_0711484.ttf') format('truetype'), 
+  url('//at.alicdn.com/t/font_1468297540_0711484.svg#iconfont') format('svg');
 
+.i-weibo, .i-github, .i-v2ex, .i-douban, .i-zhihu, .i-twitter, .i-facebook, .i-codepen
+  ifont null
+  
+.i-weibo:before
+  content '\e607'
+.i-github:before
+  content '\e60a'
+.i-v2ex:before
+  content '\e606'
+.i-douban:before
+  content '\e605'
+.i-zhihu:before
+  content '\e608'
+.i-twitter:before
+  content '\e609'
+.i-facebook:before
+  content '\e60b'
+.i-codepen:before
+  content '\e601'
 // header
 header
   padding-left 10px
@@ -36,14 +55,13 @@ header
     text-align center
     cursor pointer
     transition side-time all
-  .arrows:after
-    content '\e603'
-    font-family iconfont
-    font-size 24px
-    color #7F7F7F
-  .arrows:hover:after
-    color color-danger
-    
+    &:after
+      content '\e603'
+      font-family iconfont
+      font-size 24px
+      color #7F7F7F
+    &:hover:after
+     color color-danger
 // sidebar show style
 .sideShow 
   .arrows
@@ -54,14 +72,14 @@ header
     transform none
     box-shadow 1px 0 5px color-side
 .sidebar
-  position: fixed
+  position fixed
   left 0
   top 0
   bottom 0
   width side-width
   // use transform to hide sidebar
   transform translate3d(-(side-width), 0, 0)
-  transition transform side-time
+  transition transform side-time ease-in-out
   background-color color-side
   .head-icon
     margin 30px auto 10px
@@ -90,9 +108,26 @@ header
     .nav-item
       display inline-block
       padding 0 4px
-    .nav-item: 
       span
         color color-light-font
         display block
+        transition hover-time color
+      &:hover
+        span
+          color color-dark
+      &:nth-child(n+2)      
+        border-left 2px solid #E0E0E0
+  .social-wrap
+    margin 30px auto 0
+    width 180px
+    text-align center
+    .item
+      padding 5px
+      display inline-block
+      transition hover-time all ease-in-out
+      &:hover
+        background-color color-hover
+        i
+          color color-dark
 .wrap
-  transition side-time all
+  transition side-time all ease-in-out

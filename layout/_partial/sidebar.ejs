@@ -18,9 +18,7 @@
         <span>
           <%= site.posts.length %>
         </span>
-        <span>
-          日志
-        </span>
+        <span>日志</span>
       </a>
     </div>
     <div class="nav-item">
@@ -28,9 +26,7 @@
         <span>
           <%= site.categories.length %>
         </span>
-        <span>
-          分类
-        </span>
+        <span>分类</span>
       </a>
     </div>
     <div class="nav-item">
@@ -38,10 +34,19 @@
         <span>
           <%= site.tags.length %>
         </span>
-        <span>
-          标签
-        </span>
+        <span>标签</span>
       </a>
     </div>
   </nav>
+  <% if (theme.social) { %>
+  <div class="social-wrap">
+    <% for (var name in theme.social) { %>
+    <a href="<%= theme.social[name] %>" target="_blank">
+      <div class="item">
+        <i class="i-<%= name %>"></i>
+      </div>
+    </a>
+    <% } %>
+  </div>
+  <% } %>
 </aside>
