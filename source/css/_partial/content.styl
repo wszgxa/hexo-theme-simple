@@ -1,18 +1,27 @@
 
 .content
   max-width 768px
+  min-height 768px
   padding 20px
   margin 20px auto 0
 .archives
   margin-bottom 30px
   .title-wrap
-    padding 20px 0
+    margin 20px 0
+    padding-bottom 10px
+    border-bottom 1px solid color-border
     .post-title
       font-size 26px
       color color-header-font
-    time 
+    .page-info
+      padding-top 10px
       font-size 16px
       color color-light-font
+      a
+        color color-light-font
+        &:hover
+          border-bottom 1px solid color-hover
+      
 .page-nav
   margin 40px 0
   text-align center

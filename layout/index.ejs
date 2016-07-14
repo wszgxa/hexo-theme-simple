@@ -5,7 +5,15 @@
         <a class="post-title" href="<%- url_for(post.path) %>">
           <h1><%= post.title %></h1>
         </a>
-        <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, config.date_format) %></time>
+        <div class="page-info">
+        <% if (theme.menu.about) {%>
+          <span>By <a href="<%- url_for(theme.menu.about) %>"><%= config.author %></a> on</span>
+        <% } else{ %>
+          <span>By <%= config.author %> on</span>
+          <img src="<%= theme.avatar %>">
+        <% } %>
+          <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, config.date_format) %></time>
+        </div>
       </div>
       <div class="content-wrap">
         <% if (post.excerpt) { %>
