@@ -20,13 +20,14 @@ body
                     
 @font-face
   font-family 'iconfont'
-  src url('//at.alicdn.com/t/font_1468297540_0711484.eot')
-  src url('//at.alicdn.com/t/font_1468297540_0711484.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1468297540_0711484.woff') format('woff'), 
-  url('//at.alicdn.com/t/font_1468297540_0711484.ttf') format('truetype'), 
-  url('//at.alicdn.com/t/font_1468297540_0711484.svg#iconfont') format('svg');
-
+  src url('//at.alicdn.com/t/font_1468485960_8307326.eot')
+  src url('//at.alicdn.com/t/font_1468485960_8307326.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1468485960_8307326.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1468485960_8307326.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1468485960_8307326.svg#iconfont') format('svg')
+                    
 .i-weibo, .i-github, .i-v2ex, .i-douban, .i-zhihu, .i-twitter, .i-facebook, .i-codepen
+.i-left, .i-right
   ifont null
   
 .i-weibo:before
@@ -45,107 +46,13 @@ body
   content '\e60b'
 .i-codepen:before
   content '\e601'
-// header
-.header
-  padding-left 10px
-  margin-top 10px;
-  .arrows
-    width 40px
-    height 40px
-    border-radius 50%
-    border 1px solid color-none
-    line-height 40px
-    text-align center
-    cursor pointer
-    transition side-time all
-    &:after
-      content '\e603'
-      font-family iconfont
-      font-size 24px
-      color #7F7F7F
-    &:hover:after
-     color color-danger
-// sidebar show style
-.sideShow 
-  .arrows
-    transform rotate3d(0, 1, 0, 180deg)
-  .wrap
-    padding-left side-width  
-  .sidebar
-    transform none
-    box-shadow 1px 0 5px color-side
-.sidebar
-  position fixed
-  left 0
-  top 0
-  bottom 0
-  width side-width
-  // use transform to hide sidebar
-  transform translate3d(-(side-width), 0, 0)
-  transition transform side-time ease-in-out
-  background-color color-side
-  .head-icon
-    margin 30px auto 10px
-    width 72px
-    height 72px
-    img 
-      width 60px
-      height 60px
-      border 6px solid rgba(255, 255, 255, .85) 
-      border-radius 50%
-  .desc
-    margin 0 auto
-    text-align center
-    color #707070
-    font-size 15px
-    max-width 180px
-  .name 
-    text-align center
-    color color-dark
-    padding 0 0 10px
-    font-size 15px
-  .side-nav 
-    margin-top 35px
-    text-align center
-    font-size 16px
-    .nav-item
-      display inline-block
-      padding 0 4px
-      span
-        color color-light-font
-        display block
-        transition hover-time color
-      &:hover
-        span
-          color color-dark
-      &:nth-child(n+2)      
-        border-left 2px solid #E0E0E0
-  .social-wrap
-    margin 30px auto 0
-    width 180px
-    text-align center
-    .item
-      padding 5px
-      display inline-block
-      transition hover-time all ease-in-out
-      &:hover
-        background-color color-hover
-        i
-          color color-dark
+.i-left:before
+  content '\e600'
+.i-right:before
+  content '\e602'
+  
 .wrap
   transition side-time all ease-in-out
-  
-.content
-  max-width 768px
-  padding 20px
-  margin 20px auto 0
-.archives
-  margin-bottom 30px
-  .title-wrap
-    padding 20px 0
-    .post-title
-      font-size 26px
-      color color-header-font
-    time 
-      font-size 16px
-      color color-light-font
+@import '_partial/header'
+@import '_partial/sidebar'
+@import '_partial/content'
