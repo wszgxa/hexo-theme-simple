@@ -3,7 +3,7 @@
     <div class="archives">
       <div class="title-wrap">
         <a class="post-title" href="<%- url_for(post.path) %>">
-          <h1><%= post.title %></h1>
+          <h1><%- post.title %></h1>
         </a>
         <div class="page-info">
         <% if (theme.menu.about) {%>
@@ -21,6 +21,9 @@
         <% } else { %>
           <%- post.content %>
         <% } %>
+      </div>
+      <div class='read-more'>
+        <a href="<%- url_for(post.path) %>"><span class='i-next'>阅读全文</span></a>
       </div>
     </div>
   <% }) %>

@@ -14,42 +14,46 @@ body
   word-break break-all
   word-wrap break-word
   -webkit-user-select none
-  font size-font Helvetica, Arial, sans-serif
+  font-size size-font 
+  font-family Lato, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, sans-serif;
   background color-background
   color color-font
-                    
+
+                                       
 @font-face
   font-family 'iconfont'
-  src url('//at.alicdn.com/t/font_1468485960_8307326.eot')
-  src url('//at.alicdn.com/t/font_1468485960_8307326.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1468485960_8307326.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1468485960_8307326.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1468485960_8307326.svg#iconfont') format('svg')
+  src url('//at.alicdn.com/t/font_1469071762_054906.eot')
+  src url('//at.alicdn.com/t/font_1469071762_054906.eot?#iefix') format('embedded-opentype'), 
+  url('//at.alicdn.com/t/font_1469071762_054906.woff') format('woff'), 
+  url('//at.alicdn.com/t/font_1469071762_054906.ttf') format('truetype'), 
+  url('//at.alicdn.com/t/font_1469071762_054906.svg#iconfont') format('svg')
                     
 .i-weibo, .i-github, .i-v2ex, .i-douban, .i-zhihu, .i-twitter, .i-facebook, .i-codepen
-.i-left, .i-right
+.i-left, .i-right, .i-next
   ifont null
   
-.i-weibo:before
+.i-weibo::after
   content '\e607'
-.i-github:before
+.i-github::after
   content '\e60a'
-.i-v2ex:before
+.i-v2ex::after
   content '\e606'
-.i-douban:before
+.i-douban::after
   content '\e605'
-.i-zhihu:before
+.i-zhihu::after
   content '\e608'
-.i-twitter:before
+.i-twitter::after
   content '\e609'
-.i-facebook:before
+.i-facebook::after
   content '\e60b'
-.i-codepen:before
+.i-codepen::after
   content '\e601'
-.i-left:before
+.i-left::after
   content '\e600'
-.i-right:before
+.i-right::after
   content '\e602'
+.i-next::after
+  content '\e603'
 .wrap
   transition side-time all ease-in-out
   
