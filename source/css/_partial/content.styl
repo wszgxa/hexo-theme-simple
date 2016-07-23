@@ -48,6 +48,7 @@
         font-size 14px
         &::after
           font-size 12px
+  // content style 
   .content-wrap
     h1, h2, h3, h4
       color color-highlight
@@ -66,14 +67,34 @@
       padding-left 1.5em
       li
         list-style circle
+    a
+      border-bottom 1px solid color-font
+      color color-font
+      &:hover
+        color color-highlight
+        border-color color-highlight
     code
       background-color color-background-deep
+    table
+      margin 1em auto
+      width 70%
+      table-layout fixed
+      th, td
+        padding 0.2em
+        background-color color-background-shallow
+      th
+        padding 0.2em
+        background-color color-background-deep
+      td
+        background-color color-background-shallow
     p
       margin 1em 0
       text-align justify
     img
       display block
+      max-width 90%
       border 1px solid color-border
+// navbar style
 .page-nav
   margin 40px 0
   text-align center
