@@ -1,6 +1,6 @@
 
 .content
-  max-width 768px
+  max-width 760px
   min-height 768px
   padding 20px
   margin 20px auto 0
@@ -10,11 +10,12 @@
     margin 20px 0
     padding-bottom 10px
     border-bottom 1px solid color-border
+    h1
+      font-size 2em
+      color color-header-font
     .post-title
       position relative
       display inline-block
-      font-size 26px
-      color color-header-font
     .post-title::before
       content ''    
       bottom 0      
@@ -48,8 +49,27 @@
         &::after
           font-size 12px
   .content-wrap
+    h1, h2, h3, h4
+      color color-highlight
+      margin: 1.5em 0 1em;
+    h1
+      font-size font-header-lg
+    h2
+      font-size font-header-md
+    h3, h4
+      font-size font-header-sm
+    blockquote
+      border-left 0.3em solid color-border
+      p
+        padding-left 0.8em
+    ul
+      padding-left 1.5em
+      li
+        list-style circle
+    code
+      background-color color-background-deep
     p
-      margin: 0 0 25px 0
+      margin 1em 0
       text-align justify
     img
       display block

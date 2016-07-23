@@ -1,2 +1,19 @@
 <section class="archives-wrap">
+  <div class="archives">
+    <div class="title-wrap">
+      <h1><%- page.title %></h1>
+      <div class="page-info">
+      <% if (theme.menu.about) {%>
+        <span>By <a href="<%- url_for(theme.menu.about) %>"><%= config.author %></a> on</span>
+      <% } else{ %>
+        <span>By <%= config.author %> on</span>
+        <img src="<%= theme.avatar %>">
+      <% } %>
+        <time datetime="<%= date_xml(page.date) %>" itemprop="datePublished"><%= date(page.date, config.date_format) %></time>
+      </div>
+    </div>
+    <div class="content-wrap">
+    <%- page.content %>
+    </div>
+  </div>
 </section>
