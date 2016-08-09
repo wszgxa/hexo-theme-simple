@@ -11,6 +11,7 @@
   <div id="container">
     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
     <div class="wrap">
+      <%- partial('_partial/side') %>
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
       <section id="main" class="content">
         <%- body %>
