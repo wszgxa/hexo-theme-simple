@@ -3,21 +3,24 @@
   bottom 20px
   left 30px
   transition side-time all
-  .arrows
-    width 25px
-    height 25px
+  .top, .arrows
+    width 30px
+    height 30px
     border-radius 50%
     border 1px solid color-none
-    line-height 25px
+    line-height 30px
     text-align center
     cursor pointer
     &:after
       content '\e602'
       font-family iconfont
-      font-size 14px
+      font-size 16px
       color #7F7F7F
       // 居中
     &:hover
       background-color color-hover
     &:hover:after
      color color-danger
+  .top
+    margin-bottom 10px
+    transform rotate3d(0, 0, 1, -90deg)

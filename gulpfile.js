@@ -12,7 +12,7 @@ gulp.task('dev', function () {
     .pipe(gulp.dest('./layout/'))
   return gulp.src([
     './source/lib/zepto/zepto.js',
-    './source/lib/zepto/fx_methods.js',
+    './source/lib/zepto/fx.js',
     './source/lib/zepto/event.js',
     './source/js/simple.js'])
     .pipe(concat('simple_dev.js'))
@@ -27,7 +27,7 @@ gulp.task('build', function () {
     .pipe(gulp.dest('./layout/'))
   return gulp.src([
     './source/lib/zepto/zepto.js',
-    './source/lib/zepto/fx_methods.js',
+    './source/lib/zepto/fx.js',
     './source/lib/zepto/event.js',
     './source/js/simple.js'])
     .pipe(concat('simple_build.js'))

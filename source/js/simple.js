@@ -1,4 +1,22 @@
-;(function (win, doc, $) {
++(function (win, doc) {
+
+  window.requestAnimFrame = ( function () {
+    return window.requestAnimationFrame || 
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame    ||
+      function( callback ){
+        window.setTimeout(callback, 1000 / 60)
+      }
+  })()
+  var goTop = function () {
+    var top = document.body.scrollTop
+    var left = document.body.scrollLeft
+    window.scrollTo(left, top-100)
+    if (top > 0) {
+      requestAnimationFrame(goTop)
+    }
+  }
+
   var simple = {
     init: function () {
       this.bind()
@@ -10,7 +28,7 @@
         self.toggleBodyClass()
       })
       .on('click', '#back-top', function () {
-        $('html, body').animate({scrollTop:0}, 'slow')
+        requestAnimationFrame(goTop)
       })
     },
     // sidebar状态机
@@ -45,4 +63,4 @@
     }
   }
   simple.init()
-})(window, document, Zepto);
+})(window, document)
