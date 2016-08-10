@@ -6,10 +6,19 @@
     "type": "git",
     "url": "git+https://github.com/wszgxa/hexo-theme-simple.git"
   },
+  "scripts": {
+    "dev": "gulp dev & gulp watch",
+    "build": "gulp build"
+  },
   "license": "MIT",
   "homepage": "https://github.com/wszgxa/hexo-theme-simple#readme",
   "devDependencies": {
     "eslint": "^3.2.2",
-    "eslint-config-google": "^0.6.0"
+    "eslint-config-google": "^0.6.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^2.0.0"
   }
 }
