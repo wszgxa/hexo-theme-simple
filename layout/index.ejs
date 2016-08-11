@@ -3,7 +3,7 @@
     <div class="archives">
       <div class="title-wrap">
         <a class="post-title" href="<%- url_for(post.path) %>">
-          <h1><%- post.title %></h1>
+          <h1><%- post.title %> <% if(post.subtitle) { %><small><%= post.subtitle %></small><% } %></h1>
         </a>
         <div class="page-info">
         <% if (theme.menu.about) {%>

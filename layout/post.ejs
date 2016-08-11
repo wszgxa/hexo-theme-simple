@@ -10,7 +10,7 @@
 <section class="archives-wrap">
   <div class="archives">
     <div class="title-wrap">
-      <h1><%- page.title %></h1>
+      <h1><%= page.title %> <% if(page.subtitle) { %><small><%= page.subtitle %></small><% } %></h1>
       <div class="page-info">
       <% if (theme.menu.about) {%>
         <span>By <a href="<%- url_for(theme.menu.about) %>"><%= config.author %></a> on</span>
