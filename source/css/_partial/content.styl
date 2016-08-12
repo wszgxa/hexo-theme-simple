@@ -2,8 +2,10 @@
 .content
   max-width 760px
   min-height 768px
+  margin 0 auto
   padding 20px
-  margin 20px auto 0
+  background-color #FFF
+  box-shadow 0px 1px 3px color-hover   
 .archives
   margin-bottom 50px
   .title-wrap
@@ -11,7 +13,7 @@
     padding-bottom 10px
     border-bottom 1px solid color-border
     h1
-      font-size 2em
+      font-size 1.85em
       color color-header-font
     .post-title
       position relative
@@ -27,7 +29,6 @@
     .post-title:hover::before
       transform scale3d(1,1,1)
     .page-info
-      padding-top 10px
       font-size 16px
       color color-light-font
       a
@@ -66,18 +67,42 @@
       padding-left 1.5em
       li
         list-style circle
-    code
-      background-color color-background-deep
+    .code
+      border none
+    figure table
+      border none
     p
       margin 1em 0
       text-align justify
     img
       display block
+      max-width 90%
+      margin 0 auto
       border 1px solid color-border
-      max-width 100%
     a
       color color-href
       text-decoration underline
+    table
+      max-width 80%
+      margin 0 auto
+      border 1px solid #ddd
+      border-spacing 0
+      border-collapse collapse
+    th
+      padding 8px
+      border-top 0
+      vertical-align top
+      text-align left
+      line-height 1.42857143
+      vertical-align bottom
+      border 1px solid #ddd
+      border-bottom-width 2px
+      box-sizing border-box
+    td
+      border: 1px solid #ddd;
+      padding: 8px;
+      line-height: 1.42857143;
+      vertical-align: top;        
 .page-nav
   margin 40px 0
   text-align center
