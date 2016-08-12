@@ -36,5 +36,5 @@ gulp.task('build', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('./source/js/simple.js', ['dev'])
+  gulp.watch(['./source/js/simple.js', './layout/layout_dev.ejs'], ['dev'])
 })

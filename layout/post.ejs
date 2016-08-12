@@ -7,7 +7,7 @@
 <p>主题搭建中</p>
 
 <% } else { %>
-<section class="archives-wrap">
+<div class="archives-wrap">
   <div class="archives">
     <div class="title-wrap">
       <h1><%= page.title %> <% if(page.subtitle) { %><small><%= page.subtitle %></small><% } %></h1>
@@ -25,5 +25,6 @@
     <%- page.content %>
     </div>
   </div>
-</section>
+</div>
 <% } %>
+<%- partial('_partial/comments.ejs') %>
