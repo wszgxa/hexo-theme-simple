@@ -21,7 +21,7 @@
     <title>
     <% if (title){ %>
     <%= title %> 
-      <% if(subtitle) { %> | <%= subtitle %><% } %>
+      <% if(subtitle) { %>| <%= subtitle %><% } else { %>| <%= config.title %> <% } %>
     <% } else { %>
     <%= config.title %>
     <% } %>
