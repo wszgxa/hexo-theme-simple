@@ -1,8 +1,29 @@
 <header class="header">
-  <a href="/">首页</a>
-  <a href="<%= theme.menu.archives %>">日志</a>
-  <a href="<%= theme.menu.categories %>">分类</a>
-  <a href="<%= theme.menu.tags %>">标签</a>
-  <a href="<%= theme.menu.about %>">关于</a>
-  <a href="/atom.xml">RSS</a>
+  <nav>
+    <a
+    href="/"
+    <% if (path === 'index.html') { %>
+      class="ac"
+    <% } %>
+    >首页</a>
+    <a
+    href="<%= theme.menu.categories %>"
+    <% if (path === 'categories/index.html') { %>
+      class="ac"
+    <% } %>
+    >分类</a>
+    <a
+    href="<%= theme.menu.tags %>"
+    <% if (path === 'tags/index.html') { %>
+      class="ac"
+    <% } %>
+    >标签</a>
+    <a
+    href="<%= theme.menu.about %>"
+    <% if (path === 'about/index.html') { %>
+      class="ac"
+    <% } %>
+    >关于</a>
+    <a href="/atom.xml">RSS</a>
+  </nav>
 </header>
