@@ -1,26 +1,24 @@
 .side
   position fixed
-  bottom 20px
-  left 30px
+  bottom 40px
   transition side-time all
   .top, .arrows
-    width 30px
-    height 30px
-    border-radius 50%
+    width 35px
+    height 35px
     border 1px solid color-none
-    line-height 30px
+    line-height 35px
     text-align center
     cursor pointer
+    background-color color-hover
+    border-radius 3px
     &:after
       content '\e602'
       font-family iconfont
       font-size 16px
-      color #7F7F7F
+      color color-font
       // 居中
-    &:hover
-      background-color color-hover
     &:hover:after
      color color-danger
   .top
-    margin-bottom 10px
+    margin-bottom 1px
     transform rotate3d(0, 0, 1, -90deg)
