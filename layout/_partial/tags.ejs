@@ -1,0 +1,11 @@
+<div class="cate-head">目前共计<%= site.tags.length %>个标签</div>
+<div class="tags-cloud">
+<%- tagcloud({
+  min_font: 18,
+  max_font: 24,
+  unit: 'px',
+  color: true,
+  start_color: '#6c6c6c',
+  end_color: '#2b2b2b'
+}) %>
+</div>
