@@ -1,4 +1,14 @@
 <section class="archives-wrap">
+  <% if (page.category) { %>
+    <div class="ct-title">
+      <h2><%= page.category %> <small>分类</small></h2>
+    </div>
+  <% } %>
+  <% if (page.tag) { %>
+    <div class="ct-title">
+      <h2><%= page.tag %>  <small>标签</small></h2>
+    </div>
+  <% } %>
   <% page.posts.each(function(post, i){ %>
     <div class="archives">
       <div class="title-wrap">
