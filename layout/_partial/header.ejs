@@ -1,29 +1,19 @@
-<header class="header">
+<%
+var menu_tag = ""
+var get_menu_tag = function (p) {
+  if(p.indexOf('/') == -1) {
+    return 'home'
+  }
+  return p.split('/')[0]
+}
+menu_tag = get_menu_tag(path)
+%>
+<header class="header menu-<%= menu_tag %>">
   <nav>
-    <a
-    href="/"
-    <% if (path === 'index.html') { %>
-      class="ac"
-    <% } %>
-    >首页</a>
-    <a
-    href="<%= theme.menu.categories %>"
-    <% if (path === 'categories/index.html') { %>
-      class="ac"
-    <% } %>
-    >分类</a>
-    <a
-    href="<%= theme.menu.tags %>"
-    <% if (path === 'tags/index.html') { %>
-      class="ac"
-    <% } %>
-    >标签</a>
-    <a
-    href="<%= theme.menu.about %>"
-    <% if (path === 'about/index.html') { %>
-      class="ac"
-    <% } %>
-    >关于</a>
-    <a href="/atom.xml">RSS</a>
-  </nav>
+  <% for (var name in theme.menu) { %>
+    <a class='menu-item-<%= name %>' href="<%= url_for(theme.menu[name]) %>">
+    <%= __('menu.' + name) %>
+    </a>
+  <% } %>
+  </nav> 
 </header>

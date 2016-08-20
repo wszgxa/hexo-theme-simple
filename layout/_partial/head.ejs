@@ -32,5 +32,13 @@
     <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
     <% } %>
+    <style>
+      /* menu nav active status */
+      <% for (var name in theme.menu) { %>
+        .menu-<%= name %> .menu-item-<%= name %> {
+          color: #b71c1c
+        }
+      <% } %>
+    </style>
     <%- css('css/style') %>
   </head>

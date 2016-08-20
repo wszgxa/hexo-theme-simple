@@ -2,10 +2,10 @@
 menu:
   home: /
   categories: /categories
-  archives: /archives
+  # archives: /archives
   tags: /tags
   about: /about
-rss: /atom.xml
+  rss: /atom.xml
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
