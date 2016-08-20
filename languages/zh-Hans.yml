@@ -8,3 +8,8 @@ menu:
   search: 搜索
   rss: RSS
   commonweal: 公益404
+
+sidebar:
+  post: 日志
+  categories: 分类
+  tags: 标签

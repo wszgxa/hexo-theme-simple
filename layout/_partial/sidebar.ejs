@@ -14,11 +14,11 @@
   </div>
   <nav class="side-nav">
     <div class="nav-item">
-      <a href="<%= theme.menu.archives %>">
+      <a href="<%= theme.menu.home %>">
         <span>
           <%= site.posts.length %>
         </span>
-        <span>日志</span>
+        <span><%= __('sidebar.post')  %></span>
       </a>
     </div>
     <div class="nav-item">
@@ -26,7 +26,7 @@
         <span>
           <%= site.categories.length %>
         </span>
-        <span>分类</span>
+        <span><%= __('sidebar.categories') %></span>
       </a>
     </div>
     <div class="nav-item">
@@ -34,7 +34,7 @@
         <span>
           <%= site.tags.length %>
         </span>
-        <span>标签</span>
+        <span><%= __('sidebar.tags') %></span>
       </a>
     </div>
   </nav>
