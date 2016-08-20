@@ -1,4 +1,4 @@
-<div class="cate-head">目前共计<%= site.tags.length %>个标签</div>
+<div class="cate-head"><%= __('tags.front') %><%= site.tags.length %><%= __('tags.back') %></div>
 <div class="tags-cloud">
 <%- tagcloud({
   min_font: 18,

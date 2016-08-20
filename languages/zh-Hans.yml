@@ -13,3 +13,13 @@ sidebar:
   post: 日志
   categories: 分类
   tags: 标签
+tags: 
+  front: 目前共计
+  back: 个标签
+categories: 
+  front: 目前共计
+  back: 个分类
+footer:
+  by: 由
+  drive: 强力驱动
+  theme: 主题
