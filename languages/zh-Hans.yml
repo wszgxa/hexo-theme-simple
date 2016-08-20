@@ -13,9 +13,9 @@ sidebar:
   categories: 分类
   tags: 标签
 tags: 
-  title: 目前共计 %d 个标签
+  title: "目前共计 %d 个标签"
 categories:
-  title: 目前共计 %d 个分类
+  title: "目前共计 %d 个分类"
 footer:
-  powered: 由 %s 强力驱动
+  powered: "由 %s 强力驱动"
   theme: 主题

@@ -13,9 +13,9 @@ sidebar:
   categories: categories
   tags: tags
 tags:
-  title: %d tags in total
+  title: "%d tags in total"
 categories:
-  title: %d categories in total
+  title: "%d categories in total"
 footer:
-  powered: Powered by %s
+  powered: "Powered by %s"
   theme: Theme
