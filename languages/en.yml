@@ -1,0 +1,21 @@
+menu:
+  home: Home
+  archives: Archives
+  categories: Categories
+  tags: Tags
+  about: About
+  search: Search
+  rss: RSS
+  commonweal: 404
+
+sidebar:
+  post: posts
+  categories: categories
+  tags: tags
+tags:
+  title: %d tags in total
+categories:
+  title: %d categories in total
+footer:
+  powered: Powered by %s
+  theme: Theme

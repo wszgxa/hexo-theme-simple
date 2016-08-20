@@ -1,0 +1,21 @@
+menu:
+  home: 首頁
+  archives: 歸檔
+  categories: 分類
+  tags: 標籤
+  about: 關於
+  search: 檢索
+  rss: RSS
+  commonweal: 公益404
+
+sidebar:
+  post: 文章
+  categories: 分類
+  tags: 標籤
+tags:
+  title: 目前共有 %d 個標籤
+categories:
+  title: 目前共有 %d 個分類
+footer:
+  powered: 由 %s 強力驅動
+  theme: 主题
