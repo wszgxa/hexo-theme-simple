@@ -7,7 +7,11 @@ menu:
   search: Search
   rss: RSS
   commonweal: 404
-
+title:
+  archive: Archive
+  category: Category
+  tag: Tag
+  
 sidebar:
   post: posts
   categories: categories

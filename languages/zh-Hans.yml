@@ -7,6 +7,11 @@ menu:
   search: 搜索
   rss: RSS
   commonweal: 公益404
+  
+title:
+  archive: 归档
+  category: 分类
+  tag: 标签
 
 sidebar:
   post: 日志
