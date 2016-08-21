@@ -12,12 +12,11 @@
 ![](http://7fvhwe.com1.z0.glb.clouddn.com/4z.png)
 
 ## task list
-- [ ] laezload
-- [ ] 响应式
-- [ ] archive
 - [ ] 时间条样式
-- [ ] 来点不简单的动画
+- [ ] archive
 - [ ] 统计
+- [ ] 来点不简单的动画
+- [ ] 响应式
 - [x] 语言支持
 
 ## 其他
