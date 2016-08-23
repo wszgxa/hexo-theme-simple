@@ -20,10 +20,7 @@
     </div>
   </div>
   <%- js('simple_script') %>
-  <% if (theme.duoshuo_shortname) { %>
-    <%- partial('_script/comments/duoshuo.ejs') %>
-  <% } else if (theme.disqus_shortname) { %>
-    <%- partial('_script/comments/disqus.ejs') %>  
-  <% } %>
+  <%- partial('_script/comments.ejs') %>
+  <%- partial('_script/analytics.ejs') %>
 </body>
 </html>

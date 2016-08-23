@@ -12,18 +12,15 @@
     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
     <div class="wrap">
       <%- partial('_partial/side') %>
-      <%- partial('_partial/header') %>
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
       <section id="main" class="content">
         <%- body %>
       </section>
     <%- partial('_partial/footer') %>
     </div>
   </div>
-  <%- js('js/simple_build') %>
-  <% if (theme.duoshuo_shortname) { %>
-    <%- partial('_script/comments/duoshuo.ejs') %>
-  <% } else if (theme.disqus_shortname) { %>
-    <%- partial('_script/comments/disqus.ejs') %>  
-  <% } %>
+  <%- js('js/simple_dev') %>
+  <%- partial('_script/comments.ejs') %>
+  <%- partial('_script/analytics.ejs') %>
 </body>
 </html>
