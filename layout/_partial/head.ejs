@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <!-- dns prefetch -->
+    <link rel="dns-prefetch" href="//7fvhwe.com1.z0.glb.clouddn.com/">
+    <link rel="dns-prefetch" href="//static.duoshuo.com/">
+    <% if (theme.disqus_shortname) { %>
+    <link rel="dns-prefetch" href="//<%= theme.disqus_shortname %>.disqus.com">    
+    <% } %>
+    <link rel="dns-prefetch" href="//hm.baidu.com/">
+    <link rel="dns-prefetch" href="//www.google-analytics.com/">
+    <link rel="dns-prefetch" href="//tajs.qq.com/">
     <%
     var title = page.title;
     var subtitle = page.subtitle
@@ -27,7 +37,6 @@
     <% } %>
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta charset="utf-8">
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
