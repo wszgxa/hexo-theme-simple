@@ -6,7 +6,7 @@ var get_menu_tag = function (p) {
   }
   return p.split('/')[0]
 }
-menu_tag = get_menu_tag(path)
+menu_tag = get_menu_tag(page.path)
 %>
 <header class="header menu-<%= menu_tag %>">
   <nav>
