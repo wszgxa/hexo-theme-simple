@@ -31,9 +31,9 @@
         <% } else { %>
           <%- post.content %>
         <% } %>
-        <div class='read-more'>
-          <a href="<%- url_for(post.path) %>"><span class='i-next'><%= __('read_more') %></span></a>
-        </div>
+      </div>
+      <div class='read-more'>
+        <a href="<%- url_for(post.path) %>"><span class='i-next'><%= __('read_more') %></span></a>
       </div>
     </div>
   <% }) %>

@@ -30,3 +30,21 @@ side-width = 210px
 content-width = 760px
 content-pd-lr = 40px
 content-total-width = (content-width + content-pd-lr * 2)
+
+// animation
+
+@keyframes flow
+  from 
+    transform translate3d(0, -30px, 0)
+    opacity 0
+  to 
+    transform translate3d(0, 0, 0)
+    opacity 1
+
+@-webkit-keyframes flow
+  from 
+    transform translate3d(0, -30px, 0)
+    opacity 0
+  to 
+    transform translate3d(0, 0, 0)
+    opacity 1
