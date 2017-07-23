@@ -4,13 +4,21 @@
     <meta charset="utf-8">
     <!-- dns prefetch -->
     <link rel="dns-prefetch" href="//7fvhwe.com1.z0.glb.clouddn.com/">
+    <% if (theme.duoshuo_shortname) { %>
     <link rel="dns-prefetch" href="//static.duoshuo.com/">
+    <% } %>
     <% if (theme.disqus_shortname) { %>
     <link rel="dns-prefetch" href="//<%= theme.disqus_shortname %>.disqus.com">    
     <% } %>
+    <% if (theme.baidu_analytics) { %>
     <link rel="dns-prefetch" href="//hm.baidu.com/">
+    <% } %>
+    <% if (theme.google_analytics) { %>
     <link rel="dns-prefetch" href="//www.google-analytics.com/">
+    <% } %>
+    <% if (theme.tencent_analytics) { %>
     <link rel="dns-prefetch" href="//tajs.qq.com/">
+    <% } %>
     <%
     var title = page.title;
     var subtitle = page.subtitle
